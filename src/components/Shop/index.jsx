@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const index = ({ company, name, img, oldPrice, price, idx }) => {
+    const [count,setCount] = useState(1)
+    const increment = ()=>{
+        setCount(count+1)
+    }
+    const decrement = ()=>{
+        setCount(count-1 < 1 ? 0 : count-1)
+    }
     return (
         <div className="shop-cart">
             <div className="row">
@@ -26,13 +33,13 @@ const index = ({ company, name, img, oldPrice, price, idx }) => {
                     <div className="row justify-content-between">
                         <div className="col-6">
                             <div className="cart-shop-number">
-                                <button className="decrement btn block_of_shop">
+                                <button className="decrement btn block_of_shop" onClick={decrement}>
                                     <i className="fa fa-minus"></i>
                                 </button>
                                 <button className="number btn block_of_shop">
-                                    <span>1</span>
+                                    <span>{count}</span>
                                 </button>
-                                <button className="increment btn block_of_shop">
+                                <button className="increment btn block_of_shop" onClick={increment}>
                                     <i className="fa fa-plus"></i>
                                 </button>
                             </div>
