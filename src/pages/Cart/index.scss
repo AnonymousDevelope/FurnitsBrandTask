@@ -1,0 +1,89 @@
+.shopping_cart {
+    ._header {
+        display: flex;
+        padding: 48px;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        border-radius: 16px;
+        background: $gray-50;
+        margin-top: 24px;
+
+        .back {
+            width: 50px;
+            height: 50px;
+            background-color: $black-alpha;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                @include FontGlobal(40px, $color-black, 900);
+                text-align: start;
+            }
+
+            span {
+                @include FontGlobal(16px, $gray-400, 400);
+                width: 336px;
+                text-align: start;
+            }
+        }
+    }
+    ._body{
+        padding: 24px 0;
+        margin-top: 24px;
+        .summary{
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            .title{
+                @include FontGlobal(24px, $color-black, 600);
+                text-align: start;
+            }
+            .row .col-6:first-child{
+                text-align: start;
+            }
+            .row .col-6:last-child{
+                text-align: end;
+            }
+            .cupon-input{
+                padding: 12px 24px;
+                border: 3px solid $black-alpha;
+                border-radius: 8px;
+                margin: 0;
+            }
+            .apply{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $color-black;
+                color: $color-white;
+                width: 100%;
+                height: 100%;
+            }
+            .checkout{
+                color:$orange;
+            }
+        }
+    }
+    .similar-product {
+        display: flex;
+        flex-direction: column;
+        margin-top: 28px;
+        .title {
+            @include FontGlobal(24px, $color-black);
+            text-align: start;
+        }
+        .list{
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+        }
+    }
+}

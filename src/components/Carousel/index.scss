@@ -1,0 +1,49 @@
+.carousel_ {
+    position: relative;
+
+    #indicator {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+
+        &.active {
+            background-color: $color-black;
+        }
+
+        background-color: $color-black;
+    }
+
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 24px;
+    border-radius: 16px;
+
+    img {
+        border-radius: 16px;
+        height: 400px;
+    }
+
+    .carousel-inner {
+        position: relative;
+        .carousel-item {
+            .carousel_caption {
+                position: absolute;
+                top:50%;
+                left: 10%;
+                transform: translateY(-50%);
+                background-color: transparent;
+                h5 {
+                    @include FontGlobal(24px, $color-black,600);
+                    text-align: start;
+                }
+                p{
+                    @include FontGlobal(48px, $color-black,700);
+                }
+                a{
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

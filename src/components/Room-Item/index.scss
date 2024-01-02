@@ -1,0 +1,16 @@
+.room {
+    margin-top: 24px;
+    display: flex;
+    height: 396px;
+    width: 295px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    flex:0 0 1;
+    background-size: 100% 100%!important;
+    h3{
+        @include FontGlobal(20px, $color-black, 600);
+        width: 40px;
+    }
+}

@@ -1,0 +1,47 @@
+.room_{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    margin: 0 auto;
+    &header {
+        display: flex;
+        padding: 48px;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        border-radius: 16px;
+        background: $gray-50;
+        margin-top: 24px;
+        .back{
+            width: 50px;
+            height: 50px;
+            background-color: $black-alpha;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+            h1{
+                @include FontGlobal(40px, $color-black, 900);
+                text-align: start;
+            }
+            span{
+                @include FontGlobal(16px, $gray-400, 400);
+                width: 336px;
+                text-align: start;
+            }
+        }
+    }
+    .products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 16px;
+        
+    }
+}

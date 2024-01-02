@@ -1,0 +1,43 @@
+.home {
+    margin-top: 24px;
+    padding: 24px 0;
+    .title {
+        text-align: start !important;
+        @include FontGlobal(24px, $color-black, 600);
+    }
+    .categories {
+        display: flex;
+        flex-direction: column;
+        .list {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    }
+    .Popular{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0;
+        .list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 16px;
+        }
+    }
+    .rooms{
+        margin-top: 24px;
+        padding: 24px 0;
+        .list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 16px;
+        }
+    }
+}

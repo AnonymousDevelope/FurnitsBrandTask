@@ -1,0 +1,20 @@
+a {
+    text-decoration: none!important;
+    width: auto;
+    width: calc(100%/3 - 16px);
+    .category-item {
+        display: flex;
+        height: 184px;
+        padding: 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1 0 0;
+        border-radius: 16px;
+        width: 100%;
+        span{
+            @include FontGlobal(20px, $color-white, 600);
+            flex: 0;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 48px;
+    .for-connect-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+        .nav-link{
+            @include FontGlobal(20px, $gray-400, 600);
+        }
+    }
+    *{
+        align-items: center;
+    }
+    .theme-icons{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,87 @@
+@import '../../assets/scss/variable';
+
+.nav-furnit {
+    display: flex;
+    background-color: $gray-50;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    .nav-link {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .menuOfRoute {
+        display: flex;
+        gap: 10px;
+        margin-left: 10px;
+        align-items: center;
+
+        .nav-link {
+            padding: .5rem;
+            @include FontGlobal(23px, $color-black);
+            border-radius: 1rem;
+            transition: all .3s linear;
+            transform: scale(1);
+            &:hover {
+                color: $color-white;
+                background-color: $gray-400;
+                transform: scale(1.09);
+            }
+        }
+
+    }
+
+    .auth {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .btn-shop-cart {
+            border: 0;
+            display: flex;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 8px;
+            background: $orange-alpha;
+            span{
+                color: $orange;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-furnit {
+        .menuOfRoute {
+            position: fixed;
+            z-index: 99;
+            bottom: 0;
+            margin-left: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            align-items: center;
+            background-color: $color-white;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            .nav-link{
+                padding: 0.5rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: fit-content;
+                &:hover{
+                    transform: scale(1);
+                    background-color: transparent;
+                    i{
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+$color-black: #242424;
+$color-white: #ffffff;
+$color-red: #f44336;
+$color-green: #4caf50;
+$color-blue: #2196f3;
+$color-yellow: #ffeb3b;
+$color-purple: #9c27b0;
+$black-alpha: #0000000F;
+$gray-400: #969696;
+$gray-50: #F2F2F2;
+$orange:#E3964A;
+$orange-alpha:#E3964A3D;
+$yellow-400:#FFCB2E;
+
+// functions mixin
+
+@mixin FontGlobal($size: 16px, $color: #fff, $weight: 400) {
+    flex: 1 0 0;
+    color: $color;
+    /* Desktop/H1 */
+    font-family: 'Poppins';
+    font-size: $size;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: 150%;
+    /* 72px */
+}
